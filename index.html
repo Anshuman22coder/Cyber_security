@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cyber_security</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <script src="index.js"></script>
+
+    
+      <input type="text" id="pass" name="lname" padding="10px"><br><br>
+      <button  onclick="btn()">Submit</button>
+   <script>
+      alert("Enter the password and press on sumbit button");
+      const pass="@123";
+      function btn()
+      {
+         let check=document.getElementById("pass");
+         let check_val=check.value;
+        if(pass===check_val)
+        //go to a new webpage , created by me 
+        window.location.href = "anshuman.html";   //just like <a href="anshuman.html">Go to that webpage</a>
+        else
+        alert("Wrong password");
+
+      }
+
+
+   </script>
+  </body>
+</html>
